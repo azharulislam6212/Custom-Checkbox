@@ -1,0 +1,71 @@
+
+<ul class="no-ul-list w-100">
+                      <li class="">
+                      <input class="checkbox-custom" type="checkbox" name="filter.p.vendor" value="Fashion Hub" id="Filter-Brand-1" disabled="">
+                            <label class="checkbox-custom-label fashion hub   disabled" for="Filter-Brand-1" disabled="">Fashion Hub
+
+                  </label>
+                </li>
+                      <li class="">
+                      <input class="checkbox-custom" type="checkbox" name="filter.p.vendor" value="fashionlogy" id="Filter-Brand-2" disabled="">
+                            <label class="checkbox-custom-label fashionlogy   disabled" for="Filter-Brand-2" disabled="">fashionlogy
+                  </label>
+                </li>
+                                  
+</ul>
+
+<style> 
+
+[type="checkbox"].checkbox-custom:checked,
+[type="checkbox"].checkbox-custom:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="checkbox"].checkbox-custom:checked + label.checkbox-custom-label,
+[type="checkbox"].checkbox-custom:not(:checked) + label.checkbox-custom-label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="checkbox"].checkbox-custom:checked + label.checkbox-custom-label:before,
+[type="checkbox"].checkbox-custom:not(:checked) + label.checkbox-custom-label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 4px;
+}
+[type="checkbox"].checkbox-custom:checked + label.checkbox-custom-label:after,
+[type="checkbox"].checkbox-custom:not(:checked) + label.checkbox-custom-label:after {
+    content: "\2714";
+    width: 14px;
+    height: 14px;
+    color: var(--primary);
+    position: absolute;
+    top: 0px;
+    left: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="checkbox"].checkbox-custom:not(:checked) + label.checkbox-custom-label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="checkbox"].checkbox-custom:checked + label.checkbox-custom-label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+  </style>
